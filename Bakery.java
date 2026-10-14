@@ -1,38 +1,40 @@
-public class Bakery {
-  private double price; //Price of the item 
-  private String size; //Size of the item
 
-  // No argument constructor
-  public Bakery() {
-    this(3.5, "small");
-  }
-
-  // Parameterized constructor
-  public Bakery(double price, String size) {
-    this.price = price;
-    this.size = size;
-  }
-
-  // Accessor methods
   public double getPrice() {
     return price;
   }
 
+  /**
+   * Returns the size of the product
+   */
   public String getSize() {
     return size;
   }
 
-  // Mutator methods
+  /**
+   * Changes the name of the product
+   */
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  /**
+   * Changes the price of the product
+   */
   public void setPrice(double price) {
     this.price = price;
   }
 
+  /**
+   * Changes the size of the product
+   */
   public void setSize(String size) {
     this.size = size;
   }
 
-  // toString method
+  /**
+   * Returns the product's information as a String
+   */
   public String toString() {
-    return "Price: $" + price + ", Size: " + size;
+    return "Name: " + name + ", Price: $" + price + ", Size: " + size;
   }
 }
